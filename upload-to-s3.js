@@ -13,7 +13,7 @@
   let filePath = "./data/file.txt"
 
   let params = {
-    Bucket: 'image-gangkila',
+    Bucket: key.AWSBucketName,
     Body: fs.createReadStream(filePath),
     Key: "folder/" + Date.now() + "_" + path.basename(filePath)
   }

@@ -15,7 +15,7 @@ let s3 = new AWS.S3()
 let filePath = "./data/file-2.txt"
 
 let params = {
-  Bucket: 'image-gangkila',
+  Bucket: key.AWSBucketName,
   Key: "folder/1566914580896_file.txt"
 }
 let file = fs.createWriteStream(filePath);
